@@ -35,10 +35,14 @@
     font-family: Roman;
     src: url(/Fonts/Roman\ SD.ttf);
   }
+  @font-face {
+    font-family: Quicksand;
+    src: url(../Fonts/Roboto-Light.ttf);
+  }
 
 body{
     background: #1E1D1D !important;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Quicksand;
 }
 
 p{
@@ -51,9 +55,14 @@ p{
     color: #000000;
     font-size: 21px;
     font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
   }
   li{
+    color: #000000;
+    font-weight: 500;
+    font-size:24px;
     padding: 10px 0;
+    font-family: 'Times New Roman', Times, serif;
   }
   
   h3{
@@ -75,10 +84,10 @@ p{
     height: 28px;
     width: 210px;
   }
-  li{
-    color: #000000;
-    font-weight: 500;
-    font-size:24px;
+  .jugar:hover{
+    color: #FFFFFF;
+    transition: 0.5s;
+    background-color: #f7d85c;
   }
   .menu a:hover{
       color: #FFFFFF;
@@ -104,15 +113,11 @@ p{
     position: sticky;
     top: 13%;
     transform: matrix(20px);
-    transition: 10ms ;
+    transition: 1s ;
     margin-bottom: 1rem;
   }
 .jugar{
     width: 160px;
-    background-color: #FADA5E;
-}
-.margen{
-  margin-left: 3rem;
 }
 .img-fondo{
     background: url(../Images/Fondo_Tyrion.jpg) no-repeat;
@@ -155,6 +160,9 @@ p{
 }
 .footer li{
   padding: 0;
+}
+.pointer{
+  cursor: pointer;
 }
 .imagen{
   width: 60px;

@@ -30,14 +30,14 @@
                             <a href="./Index.html#Tyrion">Tyrion</a>
                             <a href="./Index.html#Conocenos">Conócenos</a>
                             <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                                class="opacity-100">Contactanos</a>
+                                class="opacity-100">Contáctanos</a>
                         </div>
                     </nav>
                 </div>
             </div>
         </nav>
         <div class="align-items-center d-flex logo">
-            <button class="jugar border-0 rounded-4 fs-2 mr-4">Jugar</button>
+            <button class="jugar border-0 rounded-4 fs-2 mr-4 boton">Jugar</button>
         </div>
     </div>
     <main class="container d-flex mt-4 align-items-center flex-column">
@@ -61,7 +61,7 @@
                     <label for="edad">Edad</label>
                     <input class="rounded-2 ps-3 edad" type="number" id="edad">
                 </div>
-                <textarea class="mt-4 rounded-3" name="comentario" id="comentario" cols="109" rows="10" placeholder="Escribe tu opinión o reporte"></textarea>
+                <textarea class="mt-4 rounded-3" name="comentario" id="comentario" cols="109" rows="10" placeholder="Escribe tu comentario"></textarea>
                 <button class="border-0 mt-3 rounded-4 d-flex fs-3 px-3 m-4 py-1 boton">Publicar</button>
             </form>
             <h2 class="text-white mt-4">Comentarios:</h2>
@@ -76,22 +76,6 @@
             </div>
             <button class="boton border-0 rounded-4 ver-mas fs-2 mx-auto mt-2">Ver más</button>
         </div>
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content color-fondo">
-                    <div class="modal-header">
-                        <h1 class="text-white modal-title fs-5" id="exampleModalLabel">Contactanos</h1>
-                    </div>
-                    <div class="modal-body">
-                        <p class=" text-white">555-7164</p>
-                        <p class=" text-white">Tyr.inc@example.com</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
     </main>
     <div class="row w-100 mx-auto footer text-dark fs-4 align-items-center">
         <div class="col-12 col-lg-2 d-flex align-items-center justify-content-center">
@@ -100,18 +84,19 @@
         </div>
         <div class="col-12 col-lg-3">
             <ul class="text-center text-lg-start">
-                <li>Terminos y condiciones</li>
+                <li>Términos y condiciones</li>
                 <li>Tyr.inc@example.com</li>
-                <li>Apoyanos</li>
+                <li>Apóyanos</li>
             </ul>
         </div>
         <div class="col-12 col-lg-3">
             <ul class="text-center text-lg-start">
-                <a href="./Opiniones.html">
+                <a data-bs-toggle="modal"
+                data-bs-target="#exampleModal" class="pointer">
                     <li>Reporte de errores</li>
                 </a>
                 <a href="./Opiniones.html">
-                    <li>Opiniones</li>
+                    <li>Comentarios</li>
                 </a>
                 <li class="punto"></li>
             </ul>
@@ -126,14 +111,21 @@
             <div class="modal-dialog">
                 <div class="modal-content color-fondo">
                     <div class="modal-header">
-                        <h1 class="text-white modal-title fs-5" id="exampleModalLabel">Contactanos</h1>
+                        <h1 class="text-white modal-title fs-5" id="exampleModalLabel">Contáctanos</h1>
                     </div>
                     <div class="modal-body">
-                        <p class=" text-white">555-7164</p>
-                        <p class=" text-white">Tyr.inc@example.com</p>
+                        <form action="" class="d-flex flex-column">
+                            <label class="text-white" for="name">Nombre:</label>
+                            <input class="text-capitalize rounded-2" type="text" id="name" placeholder="Nombre"/>
+                            <label class="text-white" for="email">Email:</label>
+                            <input class="rounded-2" type="email" id="email" placeholder="Email"/>
+                            <label class="text-white" for="message">Mensaje:</label>
+                            <textarea class="rounded-2" name="message" id="message" placeholder="Escribe tu mensaje" cols="30" rows="10"></textarea>
+                        </form>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-success">Enviar</button>
                     </div>
                 </div>
             </div>
