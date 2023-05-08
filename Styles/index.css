@@ -1,0 +1,187 @@
+@media (max-width:1040px) {
+  .gap{
+    gap: 1rem !important;
+  }
+  .sticky-top{
+    position: relative !important;
+  }
+  .header{
+    display: flex;
+    flex-wrap: nowrap !important;
+  }
+  .logo{
+    align-items: flex-start !important;
+  }
+  .jugar{
+    margin-top: 1rem;
+  }
+  .trailer-fixed{
+    position:relative;
+    top:inherit !important;
+    transition:none;
+    margin-bottom: 1rem;
+  }
+  .header{
+    padding: 0 0 !important;
+  }
+  .margen{
+    margin-left: 0 !important;
+  }
+  .boton{
+    margin: 0 auto !important;
+  }
+}
+@font-face {
+    font-family: Roman;
+    src: url(/Fonts/Roman\ SD.ttf);
+  }
+  @font-face {
+    font-family: Quicksand;
+    src: url(../Fonts/Roboto-Light.ttf);
+  }
+
+body{
+    background: #1E1D1D !important;
+    font-family: Quicksand;
+}
+
+p{
+    font-size: 18pt;
+    color: #FFFFFF;
+  }
+
+  a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 21px;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  li{
+    color: #000000;
+    font-weight: 500;
+    font-size:24px;
+    padding: 10px 0;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  h3{
+    color: #ffffff;
+    font-family: Roman;
+    font-size: 40px;
+  }
+  textarea{
+    max-height: 200px;
+    min-height: 150px;
+    width: 100%;
+    max-width: 1080px;
+  }
+  h4{
+    font-family: Roman;
+    font-size: 72px;
+  }
+  select{
+    height: 28px;
+    width: 210px;
+  }
+  .jugar:hover{
+    color: #FFFFFF;
+    transition: 0.5s;
+    background-color: #f7d85c;
+  }
+  .menu a:hover{
+      color: #FFFFFF;
+      border-bottom: solid #FADA5E 1px;
+      transition: 0.6s;
+  }
+  .menu a:active{
+      color: #FADA5E !important;
+      border-bottom: solid #FADA5E 1px; 
+      transition: 0s;
+  }
+  .punto{
+    color: #c9c8c800;
+    
+  }
+  .Tyrion{
+    height: 100%;
+  }
+  .trailer{
+    position: sticky;
+  }
+  .trailer-fixed{
+    position: sticky;
+    top: 13%;
+    transform: matrix(20px);
+    transition: 1s ;
+    margin-bottom: 1rem;
+  }
+.jugar{
+    width: 160px;
+}
+.img-fondo{
+    background:#77777748;
+    background-size: cover;
+}
+.texto{
+  text-align: justify;
+}
+.gap{
+  gap: 6rem;
+}
+.menu{
+  display: flex;
+  flex-direction: column;
+}
+.aventura{
+  margin: 1rem 6rem;
+}
+.conocenos{
+  padding: 1rem 5rem;
+}
+.formulario{
+  padding: 1rem 5rem;
+  max-width: 1080px;
+  width: 100%;
+}
+.boton{
+  background-color: #FADA5E;
+}
+.header{
+  background-color: #c9c8c8cc;
+  z-index: 1000;
+  max-width: 1440px;
+  padding: 1.5rem 6rem;
+}
+.footer{
+  background-color: #c9c8c8cc;
+  padding: 0 6rem;
+  max-width: 1440px;
+}
+.footer li{
+  padding: 0;
+}
+.pointer{
+  cursor: pointer;
+}
+.imagen{
+  width: 60px;
+  height: 60px;
+}
+.tel{
+  width: 30px;
+  height: 30px;
+}
+.usuario{
+  width: 45px;
+  height: 45px;
+}
+.color-fondo{
+  background-color: #323233 !important;
+}
+.ver-mas{
+  width: 150px;
+}
+.edad{
+  width: 210px;
+}
